@@ -1,16 +1,14 @@
 import React from 'react';
 import Category from './Category';
-import Heading from './Heading';
-import Nav from './Nav';
+
 import RequestTable from './RequestTable';
 const RequestList = () => {
   return (
     <div>
-      <Heading />
-      <div className="container">
+      {/* <div className="container">
         <Nav />
-      </div>
-      <div>
+      </div> */}
+      <div className="container-box">
         <Category />
         <RequestTable />
       </div>

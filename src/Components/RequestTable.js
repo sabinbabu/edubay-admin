@@ -1,46 +1,51 @@
 import React from 'react';
-
+import { NavLink } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { data } from './data';
 const RequestTable = () => {
-    var data = [
-        {
-            id: 1,
-            person_name: "Ronim Karki",
-            institution_name: "Australian Institute",
-            address: "123 Kent Street, NSW"
-        },
-        {
-            id: 2,
-            person_name: "John Karki",
-            institution_name: "Sydney Institute",
-            address: "12 King Street, NSW"
-        }
-    ]
-
-    return (
-        <div>
-            <table className='table'>
-                <tr>
-                    <th>ID</th>
-                    <th>Person Name</th>
-                    <th>Institution Name</th>
-                    <th>Address</th>
-                    <th>Options</th>
-                </tr>
-                {data.map(record => (
-                    <tr>
-                        <td>{record.id}</td>
-                        <td>{record.person_name}</td>
-                        <td>{record.institution_name}</td>
-                        <td>{record.address}</td>
-                        <td>
-                            <button className='btn_accept'>Accept</button>
-                            <button className='btn_reject'>Reject</button>
-                        </td>
-                    </tr>
-                ))}
-            </table>
-        </div>
-    );
+  //   const onClickHandler = () => {
+  //     const { id } = useParams;
+  //   };
+  return (
+    <div className="table__container">
+      <table className="table">
+        <tr>
+          <th>ID</th>
+          <th>Person Name</th>
+          <th>Institution Name</th>
+          <th>Address</th>
+          <th>Details</th>
+          <th>Options</th>
+        </tr>
+        {data.map((record) => (
+          <tr>
+            {/* <Link to={`requestList/${record.id}`}> */}
+            <td>{record.id}</td>
+            <td>{record.person_name}</td>
+            <td>{record.institution_name}</td>
+            <td>{record.address}</td>
+            {/* </Link> */}
+            <td>
+              <button className="btn_details">
+                <FontAwesomeIcon icon="fa-solid fa-check" />
+                <NavLink to={`/requestList/${record.id}`}>Details</NavLink>
+              </button>
+            </td>
+            <td>
+              <button className="btn_accept">
+                <FontAwesomeIcon icon="fa-solid fa-check" />
+                Accept
+              </button>
+              <button className="btn_reject">
+                <FontAwesomeIcon icon="fa-solid fa-check" />
+                Reject
+              </button>
+            </td>
+          </tr>
+        ))}
+      </table>
+    </div>
+  );
 };
 
 export default RequestTable;
