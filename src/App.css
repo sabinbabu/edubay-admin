@@ -177,14 +177,27 @@ a {
   background-color: #f7df40;
   height: 50px;
   padding: 20px;
-  display: inline-flex;
+  display: flex;
+  justify-content: space-between;
+  
 }
 .logo {
   width: 60px;
   height: 60px;
-  display: flex;
-  align-self: center;
+  
 }
+.logodiv{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.logout{
+  width: 50px;
+  height: 50px;
+  margin: 0px 40px 0px 0px;
+  cursor: pointer;
+}
+
 .container {
   display: flex;
   justify-content: center;
