@@ -2,6 +2,7 @@ import React from 'react';
 import Category from './Category';
 import Heading from './Heading';
 import Nav from './Nav';
+import RequestTable from './RequestTable';
 const RequestList = () => {
   return (
     <div>
@@ -11,6 +12,7 @@ const RequestList = () => {
       </div>
       <div>
         <Category />
+        <RequestTable />
       </div>
     </div>
   );

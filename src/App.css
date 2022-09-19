@@ -179,19 +179,22 @@ a {
   padding: 20px;
   display: flex;
   justify-content: space-between;
-  
+
 }
+
 .logo {
   width: 60px;
   height: 60px;
-  
+
 }
-.logodiv{
+
+.logodiv {
   display: flex;
   align-items: center;
   cursor: pointer;
 }
-.logout{
+
+.logout {
   width: 50px;
   height: 50px;
   margin: 0px 40px 0px 0px;
@@ -204,6 +207,7 @@ a {
   margin-top: 30px;
   border: 3px, solid, #f7df40;
 }
+
 .navigation {
   /* height: 50px; */
   width: 500px;
@@ -220,10 +224,12 @@ a {
   /* flex-basis: 1; */
   font-size: 15px;
 }
+
 a {
   color: black;
   transition: all 0.2s;
 }
+
 a:hover {
   height: 100px;
   background-color: #f7df41;
@@ -231,12 +237,14 @@ a:hover {
   border-radius: 10px;
   font-weight: bold;
 }
+
 .category {
   margin-top: 25px;
   margin: 25px 100px 25px 100px;
   display: flex;
   /* justify-content: center; */
 }
+
 .dropdown {
   width: 150px;
   margin-left: 5px;
@@ -244,4 +252,36 @@ a:hover {
   border-width: 2px;
   padding-left: 5px;
   border-radius: 5px;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+.table {
+  border-collapse: collapse;
+  margin: 0 0 0 100px;
+  width: 75%;
+}
+
+.btn_accept {
+  padding: 5px 10px 5px 10px;
+  margin: 10px;
+  color: #ffffff;
+  background: #4af43e;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn_reject {
+  padding: 5px 10px 5px 10px;
+  color: #ffffff;
+  background: #f73636;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
 }

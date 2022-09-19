@@ -5,8 +5,8 @@ const Category = () => {
     <div className="category">
       <h6>Category :</h6>
       <select className="dropdown" name="cars" id="cars">
-        <option value="Student">Student</option>
         <option value="Institution">Institution</option>
+        <option value="Student">Student</option>
         <option value="Consultancy">Consultancy</option>
       </select>
     </div>
