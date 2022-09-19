@@ -1,38 +1,234 @@
-.App {
-  text-align: center;
+/*------------------------------------------------------------------
+    Main Style Stylesheet
+    Project:        <project_name>
+    Version:        <project_version>
+    Author:         <project_author>
+    Last change:    <last_change_date>
+    Primary use:    <primary_use_keywords>
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+  body
+   + STUDENT
+      ++ NAVIGATION BAR
+      ++ DASHBOARD
+      ++ PROFILE
+      ++ SETUP
+      ++ PROCESS
+      ++ TO-DO
+      ++ MESSAGES
+      ++ SUPPORT
+
+    +INSTITUTION
+    +ASSOCIATES
+    +AGENCY
+-------------------------------------------------------------------*/
+
+/*=======================================================
+      GENERAL
+========================================================*/
+
+* {
+  margin: 0px;
+  padding: 0px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background: #f5f5f5;
+  font-weight: normal;
+  position: relative;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.fonts {
+  font-family: 'Merriweather', serif;
+  font-family: 'Poppins', sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--main-bg);
+  font-weight: normal;
+  position: relative;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  background-repeat: repeat-y;
+  background-size: cover;
+  text-decoration: none;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+:root {
+  --main-bg2: #f5f5f5;
+  --main-bg1: #f2f2f2;
+  --main-bg3: #fff;
+  --sec-bg: #f7df40;
+  --third-bg: #f6b138;
+  --heading: #252525;
+  --para: #141414;
+  --btn-font: #222;
+  --footer-bg: #222;
+  --footer-font: #d3d3d3;
+  --login-font: #ccc;
+  --search-box: #ffffffcc;
+}
+
+.fonts {
+  font-family: 'Merriweather', serif;
+  font-family: 'Poppins', sans-serif;
+}
+
+/*=======================================================
+      WRAPPER
+========================================================*/
+
+#wrap {
+  position: relative;
+  width: 100%;
+}
+
+/*=======================================================
+      HEADINGS
+========================================================*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  color: #252525;
+}
+
+h1 {
+  font-size: 52px;
+}
+
+h2 {
+  font-size: 46px;
+}
+
+h3 {
+  font-size: 36px;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 5px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  align-self: center;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+p {
+  font-weight: 500;
+  color: #141414;
+  line-height: 26px;
+  text-rendering: optimizeLegibility;
+}
+
+button {
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+a {
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  text-decoration: none !important;
+}
+
+/* Check what is the use of display in image */
+.header {
+  width: 100%;
+  background-color: #f7df40;
+  height: 50px;
+  padding: 20px;
+  display: inline-flex;
+}
+.logo {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-self: center;
+}
+.container {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 30px;
+  border: 3px, solid, #f7df40;
 }
-
-.App-link {
-  color: #61dafb;
+.navigation {
+  /* height: 50px; */
+  width: 500px;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  border-width: 3px;
+  border-style: solid;
+  border-color: #f7df40;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-radius: 15px;
+  /* flex-basis: 1; */
+  font-size: 15px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a {
+  color: black;
+  transition: all 0.2s;
+}
+a:hover {
+  height: 100px;
+  background-color: #f7df41;
+  padding: 12px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+.category {
+  margin-top: 25px;
+  margin: 25px 100px 25px 100px;
+  display: flex;
+  /* justify-content: center; */
+}
+.dropdown {
+  width: 150px;
+  margin-left: 5px;
+  border-color: #f7df41;
+  border-width: 2px;
+  padding-left: 5px;
+  border-radius: 5px;
 }
